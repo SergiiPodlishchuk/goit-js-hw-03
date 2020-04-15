@@ -1,19 +1,20 @@
+"use strict";
+console.log("<------task-05------>");
 const products = [
   { name: "Радар", price: 1300, quantity: 4 },
   { name: "Сканер", price: 2700, quantity: 3 },
   { name: "Дроид", price: 400, quantity: 7 },
-  { name: "Захват", price: 1200, quantity: 2 }
+  { name: "Захват", price: 1200, quantity: 2 },
 ];
 
-const getAllPropValues = function(arr, prop) {
-  const value = [];
+const getAllPropValues = function (arr, prop) {
+  const arrValue = [];
   for (const itemArr of arr) {
-    // console.log(itemArr[prop]);
     if (prop in itemArr) {
-      value.push(itemArr[prop]);
+      arrValue.push(itemArr[prop]);
     }
   }
-  return value;
+  return arrValue;
 };
 
 /*
@@ -24,3 +25,5 @@ console.log(getAllPropValues(products, "name")); // ['Радар', 'Сканер
 console.log(getAllPropValues(products, "quantity")); // [4, 3, 7, 2]
 
 console.log(getAllPropValues(products, "category")); // []
+
+console.log(getAllPropValues(products, "price")); //[1300, 2700, 400, 1200]

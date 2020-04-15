@@ -1,6 +1,6 @@
 "use strict";
-
-const findBestEmployee = function(employees) {
+console.log("<------task-03------>");
+const findBestEmployee = function (employees) {
   const objs = Object.keys(employees);
   let max = 0;
   let name;
@@ -10,7 +10,7 @@ const findBestEmployee = function(employees) {
       name = obj;
     }
   }
-  return name;
+  return `${name}: ${max}`;
 };
 
 console.log(
@@ -18,7 +18,7 @@ console.log(
     ann: 29,
     david: 35,
     helen: 1,
-    lorence: 99
+    lorence: 99,
   })
 ); // lorence
 
@@ -26,7 +26,7 @@ console.log(
   findBestEmployee({
     poly: 12,
     mango: 17,
-    ajax: 4
+    ajax: 4,
   })
 ); // mango
 
@@ -35,6 +35,6 @@ console.log(
     lux: 147,
     david: 21,
     kiwi: 19,
-    chelsy: 38
+    chelsy: 38,
   })
 ); // lux

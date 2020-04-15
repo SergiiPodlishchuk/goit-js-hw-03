@@ -1,4 +1,6 @@
-const countProp = function(obj) {
+"use strict";
+console.log("<------task-02------>");
+const countProp = function (obj) {
   const quantityObj = Object.keys(obj);
   return quantityObj.length;
 };
